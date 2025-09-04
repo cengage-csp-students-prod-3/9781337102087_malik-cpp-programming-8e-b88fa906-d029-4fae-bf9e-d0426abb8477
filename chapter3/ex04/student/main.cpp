@@ -17,7 +17,7 @@ int main()
     cin >> bagSize;
     cout << endl;
 
-    cout << "Enter the cost in dollar of the " << bagSize
+    cout << "Enter the cost in dollar for the " << bagSize
         << " pound fertilizer bag: ";
     cin >> cost;
     cout << endl;
