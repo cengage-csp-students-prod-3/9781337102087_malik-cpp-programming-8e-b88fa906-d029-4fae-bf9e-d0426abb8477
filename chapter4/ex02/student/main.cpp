@@ -70,9 +70,11 @@ int main() {
         middleNum = num3;
     }
 
-    cout << "\nThe smallest number is: " << smallestNum << endl;
-    cout << "\nThe middle number is: " << middleNum << endl;
-    cout << "\nThe largest number is: " << largestNum << endl;
+    //cout << "\nThe smallest number is: " << smallestNum << endl;
+    //cout << "\nThe middle number is: " << middleNum << endl;
+    //cout << "\nThe largest number is: " << largestNum << endl;
+    cout << "\nThe numbers in ascending order are: " << smallestNum <<
+        " " << middleNum << " " << largestNum << endl;
 
     return 0;
 }
