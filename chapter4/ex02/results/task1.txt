@@ -1,68 +1,24 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: All positive in order case 1
-Reason: Unable to find '['2 99 134']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the third number
+Reason: None
+Timestamp: 2025-09-08 22:50:36.897274
 
-The smallest number is: 2
-
-The middle number is: 99
-
-The largest number is: 134
-.
-Error : AssertionError - Unable to find 2 99 134 in the program's output.
-Timestamp: 2025-09-08 22:44:17.192045
-
-Status: FAILED!
+Status: PASSED!
 Check: 2
 Test: All positive not in order case 1
-Reason: Unable to find '['732 803 839']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the third number
+Reason: None
+Timestamp: 2025-09-08 22:50:36.899200
 
-The smallest number is: 732
-
-The middle number is: 803
-
-The largest number is: 839
-.
-Error : AssertionError - Unable to find 732 803 839 in the program's output.
-Timestamp: 2025-09-08 22:44:17.193990
-
-Status: FAILED!
+Status: PASSED!
 Check: 3
 Test: All negative not in order case 1
-Reason: Unable to find '['-503 -489 -89']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the third number
+Reason: None
+Timestamp: 2025-09-08 22:50:36.901095
 
-The smallest number is: -503
-
-The middle number is: -489
-
-The largest number is: -89
-.
-Error : AssertionError - Unable to find -503 -489 -89 in the program's output.
-Timestamp: 2025-09-08 22:44:17.195876
-
-Status: FAILED!
+Status: PASSED!
 Check: 4
 Test: Positive, negative and zero case 1 
-Reason: Unable to find '['-3435 0 8943']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the third number
-
-The smallest number is: -3435
-
-The middle number is: 0
-
-The largest number is: 8943
-.
-Error : AssertionError - Unable to find -3435 0 8943 in the program's output.
-Timestamp: 2025-09-08 22:44:17.197755
+Reason: None
+Timestamp: 2025-09-08 22:50:36.902929
