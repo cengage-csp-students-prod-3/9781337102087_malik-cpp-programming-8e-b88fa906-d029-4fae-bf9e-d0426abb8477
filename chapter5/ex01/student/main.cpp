@@ -54,7 +54,7 @@ int main() {
         cout << digit << " ";
         revNumber = revNumber / 10;
     }
-   
+ 
     cout << "\nThe sum is: " << sum << endl;
     return 0;
 }
