@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <string>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ int main() {
 
     string telephoneInLetters = "";
     string telephoneInNum = "";
-    char yesOrNo;
+    string yesOrNo;
     int numOfLetters = 0;
     const int MAX_NUM_OF_LETTERS = 7;
     char letter;
@@ -21,14 +22,17 @@ int main() {
     // Prompt the user to enter y or any other letter to exit the program
 
     cout << "Enter Y/y to convert a telephone number from letters to digits. \nEnter any other letter to terminate the program." << endl;
-    cin >> yesOrNo;
+    getline(cin, yesOrNo);
 
-    while ((yesOrNo == 'y') || (yesOrNo == 'Y')) {
+    while ((yesOrNo == "y") || (yesOrNo == "Y")) {
 
         // Enter a telephone number expressed in letters
 
+        //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
         cout << "Enter a telephone number using letters: ";
-        cin >> telephoneInLetters;
+        //cin >> telephoneInLetters;
+        getline(cin, telephoneInLetters);
 
         numOfLetters = telephoneInLetters.length();
         if (numOfLetters > MAX_NUM_OF_LETTERS) {
@@ -44,7 +48,7 @@ int main() {
 
         int i = 0;
 
-        while (i < MAX_NUM_OF_LETTERS) {
+        while (i < numOfLetters) {
 
             if (i == 3) {
                 telephoneInNum.append("-"); // Add a hyphen after the third digit
@@ -85,18 +89,20 @@ int main() {
                 digit = 9;
             }
 
+            cout << "The letter "<< letter << " is converted to the digit " << digit << endl;
+            cout << "i is equal to " << i << endl;
             telephoneInNum.append(to_string(digit));
             i++;
         }
 
         // Output the corresponding telephone number in digits.
 
-        cout << "The corresponding telephone number is: ['" << telephoneInNum << "']" << endl;
+        cout << "\nThe corresponding telephone number is: ['" << telephoneInNum << "']" << endl;
         
             telephoneInNum.erase();
 
         cout << "To process another telephone number, enter Y / y \nEnter any other letter to terminate the program." << endl;
-        cin >> yesOrNo;
+        getline(cin, yesOrNo);
     }
 
     return 0;
