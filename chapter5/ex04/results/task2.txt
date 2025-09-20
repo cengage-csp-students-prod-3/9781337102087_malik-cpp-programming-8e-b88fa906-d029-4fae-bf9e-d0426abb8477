@@ -1,0 +1,9 @@
+
+Status: FAILED!
+Check: 1
+Test: Multiple numbers test 1
+Reason: Unable to find '['347-7868', '732-6636']' in the program's output.
+Enter a telephone number using letters: The corresponding telephone number is: 9
+.
+Error : AssertionError - Unable to find 347-7868 in the program's output.
+Timestamp: 2025-09-20 00:10:54.456338
