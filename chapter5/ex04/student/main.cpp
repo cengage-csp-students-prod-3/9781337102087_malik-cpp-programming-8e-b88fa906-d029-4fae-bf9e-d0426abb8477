@@ -25,8 +25,6 @@ int main() {
 
     while ((yesOrNo == 'y') || (yesOrNo == 'Y')) {
 
-        
-
         // Enter a telephone number expressed in letters
 
         cout << "Enter a telephone number using letters: ";
@@ -96,9 +94,9 @@ int main() {
         cout << "The corresponding telephone number is: ['" << telephoneInNum << "']" << endl;
         
         //for (int x = 0; x < numOfLetters; x++) {
-            //telephoneInNum.erase();
+            telephoneInNum.erase();
        // }
-
+        cout << "telephoneInNum after erase(): " << telephoneInNum << endl;
         cout << "To process another telephone number, enter Y / y \nEnter any other letter to terminate the program." << endl;
         cin >> yesOrNo;
     }
