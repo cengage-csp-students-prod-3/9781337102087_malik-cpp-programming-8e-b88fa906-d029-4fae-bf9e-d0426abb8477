@@ -3,32 +3,10 @@ Status: PASSED!
 Check: 1
 Test: Test case 1
 Reason: None
-Timestamp: 2025-09-20 16:18:10.305007
+Timestamp: 2025-09-20 17:41:30.076815
 
-Status: FAILED!
+Status: PASSED!
 Check: 2
 Test: Test case 2
-Reason: Unable to find '['266-5263']' in the program's output.
-Enter Y/y to convert a telephone number from letters to digits. 
-Enter any other letter to terminate the program.
-Enter a telephone number using letters: The letter c is converted to the digit 2
-i is equal to 0
-The letter o is converted to the digit 6
-i is equal to 1
-The letter o is converted to the digit 6
-i is equal to 2
-The letter l is converted to the digit 5
-i is equal to 3
-The letter   is converted to the digit 5
-i is equal to 4
-The letter c is converted to the digit 2
-i is equal to 5
-The letter o is converted to the digit 6
-i is equal to 6
-
-The corresponding telephone number is: ['266-5526']
-To process another telephone number, enter Y / y 
-Enter any other letter to terminate the program.
-.
-Error : AssertionError - Unable to find 266-5263 in the program's output.
-Timestamp: 2025-09-20 16:18:10.307031
+Reason: None
+Timestamp: 2025-09-20 17:41:30.078937
