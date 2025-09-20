@@ -1,0 +1,18 @@
+
+Status: FAILED!
+Check: 1
+Test: Test case 1
+Reason: Unable to find '['776-4726']' in the program's output.
+Enter a telephone number using letters: The corresponding telephone number is: 9
+.
+Error : AssertionError - Unable to find 776-4726 in the program's output.
+Timestamp: 2025-09-20 00:10:52.041975
+
+Status: FAILED!
+Check: 2
+Test: Test case 2
+Reason: Unable to find '['266-5263']' in the program's output.
+Enter a telephone number using letters: The corresponding telephone number is: 9
+.
+Error : AssertionError - Unable to find 266-5263 in the program's output.
+Timestamp: 2025-09-20 00:10:52.043988
