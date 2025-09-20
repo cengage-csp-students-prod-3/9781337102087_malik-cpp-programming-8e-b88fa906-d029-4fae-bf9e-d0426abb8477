@@ -29,7 +29,6 @@ int main() {
         // Enter a telephone number expressed in letters
 
         cout << "Enter a telephone number using letters: ";
-        //cin >> telephoneInLetters;
         getline(cin, telephoneInLetters);
 
         numOfLetters = telephoneInLetters.length();
@@ -45,7 +44,6 @@ int main() {
         // Convert each letter of the string to a digit
 
         int i = 0;
-
         while (i < numOfLetters) {
 
             if (i == 3) {
@@ -56,7 +54,8 @@ int main() {
 
             // Uses the phone dialpad to process each letter to a digit
 
-            if (letter != ' ') {
+            if (letter != ' ') {    // Executes if statement if letter is not a space
+
                 if ((letter == 'a') || (letter == 'b') || (letter == 'c')) {
                     digit = 2;
                 }
@@ -87,12 +86,13 @@ int main() {
                 else if ((letter == 'w') || (letter == 'x') || (letter == 'y') || (letter == 'z')) {
                     digit = 9;
                 }
-                cout << "The letter "<< letter << " is converted to the digit " << digit << endl;
-                cout << "i is equal to " << i << endl;
+                //cout << "The letter "<< letter << " is converted to the digit " << digit << endl;
+                //cout << "i is equal to " << i << endl;
                 telephoneInNum.append(to_string(digit));
             }
-            else {
-                cout << "error in letter input" << endl;
+
+            else {  // Ignore spaces in the input
+                //cout << "error in letter input" << endl;
                 numOfLetters++;
             }
             
