@@ -3,7 +3,7 @@ Status: PASSED!
 Check: 1
 Test: Test case 1
 Reason: None
-Timestamp: 2025-09-20 01:47:03.534907
+Timestamp: 2025-09-20 01:59:06.354841
 
 Status: FAILED!
 Check: 2
@@ -12,8 +12,9 @@ Reason: Unable to find '['266-5263']' in the program's output.
 Enter Y/y to convert a telephone number from letters to digits. 
 Enter any other letter to terminate the program.
 Enter a telephone number using letters: The corresponding telephone number is: ['266-5']
+telephoneInNum after erase(): 
 To process another telephone number, enter Y / y 
 Enter any other letter to terminate the program.
 .
 Error : AssertionError - Unable to find 266-5263 in the program's output.
-Timestamp: 2025-09-20 01:47:03.536855
+Timestamp: 2025-09-20 01:59:06.356818
