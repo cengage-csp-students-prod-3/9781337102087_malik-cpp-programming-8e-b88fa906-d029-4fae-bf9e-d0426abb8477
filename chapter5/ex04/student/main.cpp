@@ -44,7 +44,7 @@ int main() {
 
         int i = 0;
 
-        while (i < numOfLetters) {
+        while (i < MAX_NUM_OF_LETTERS) {
 
             if (i == 3) {
                 telephoneInNum.append("-"); // Add a hyphen after the third digit
@@ -93,10 +93,8 @@ int main() {
 
         cout << "The corresponding telephone number is: ['" << telephoneInNum << "']" << endl;
         
-        //for (int x = 0; x < numOfLetters; x++) {
             telephoneInNum.erase();
-       // }
-        cout << "telephoneInNum after erase(): " << telephoneInNum << endl;
+
         cout << "To process another telephone number, enter Y / y \nEnter any other letter to terminate the program." << endl;
         cin >> yesOrNo;
     }
