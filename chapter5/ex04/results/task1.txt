@@ -1,18 +1,19 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Test case 1
-Reason: Unable to find '['776-4726']' in the program's output.
-Enter a telephone number using letters: The corresponding telephone number is: 9
-.
-Error : AssertionError - Unable to find 776-4726 in the program's output.
-Timestamp: 2025-09-20 00:10:52.041975
+Reason: None
+Timestamp: 2025-09-20 01:47:03.534907
 
 Status: FAILED!
 Check: 2
 Test: Test case 2
 Reason: Unable to find '['266-5263']' in the program's output.
-Enter a telephone number using letters: The corresponding telephone number is: 9
+Enter Y/y to convert a telephone number from letters to digits. 
+Enter any other letter to terminate the program.
+Enter a telephone number using letters: The corresponding telephone number is: ['266-5']
+To process another telephone number, enter Y / y 
+Enter any other letter to terminate the program.
 .
 Error : AssertionError - Unable to find 266-5263 in the program's output.
-Timestamp: 2025-09-20 00:10:52.043988
+Timestamp: 2025-09-20 01:47:03.536855
