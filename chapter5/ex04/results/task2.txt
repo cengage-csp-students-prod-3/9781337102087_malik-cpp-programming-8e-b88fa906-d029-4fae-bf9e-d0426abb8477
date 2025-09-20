@@ -5,9 +5,9 @@ Test: Multiple numbers test 1
 Reason: Unable to find '['347-7868', '732-6636']' in the program's output.
 Enter Y/y to convert a telephone number from letters to digits. 
 Enter any other letter to terminate the program.
-Enter a telephone number using letters: The corresponding telephone number is: ['347-78']
+Enter a telephone number using letters: The corresponding telephone number is: ['347-7888']
 To process another telephone number, enter Y / y 
 Enter any other letter to terminate the program.
 .
 Error : AssertionError - Unable to find 347-7868 in the program's output.
-Timestamp: 2025-09-20 01:47:04.469545
+Timestamp: 2025-09-20 02:05:15.531417
