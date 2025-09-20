@@ -9,7 +9,7 @@
 using namespace std;
 
 int main() {
-        // Write your main here
+    // Write your main here
 
     string telephoneInLetters = "";
     string telephoneInNum = "";
@@ -27,8 +27,6 @@ int main() {
     while ((yesOrNo == "y") || (yesOrNo == "Y")) {
 
         // Enter a telephone number expressed in letters
-
-        //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         cout << "Enter a telephone number using letters: ";
         //cin >> telephoneInLetters;
@@ -58,40 +56,46 @@ int main() {
 
             // Uses the phone dialpad to process each letter to a digit
 
-            if ((letter == 'a') || (letter == 'b') || (letter == 'c')) {
-                digit = 2;
-            }
+            if (letter != ' ') {
+                if ((letter == 'a') || (letter == 'b') || (letter == 'c')) {
+                    digit = 2;
+                }
 
-            else if ((letter == 'd') || (letter == 'e') || (letter == 'f')) {
-                digit = 3;
-            }
+                else if ((letter == 'd') || (letter == 'e') || (letter == 'f')) {
+                    digit = 3;
+                }
 
-            else if ((letter == 'g') || (letter == 'h') || (letter == 'i')) {
-                digit = 4;
-            }
+                 else if ((letter == 'g') || (letter == 'h') || (letter == 'i')) {
+                    digit = 4;
+                }
 
-            else if ((letter == 'j') || (letter == 'k') || (letter == 'l')) {
-                digit = 5;
-            }
+                else if ((letter == 'j') || (letter == 'k') || (letter == 'l')) {
+                    digit = 5;
+                }
 
-            else if ((letter == 'm') || (letter == 'n') || (letter == 'o')) {
-                digit = 6;
-            }
+                else if ((letter == 'm') || (letter == 'n') || (letter == 'o')) {
+                    digit = 6;
+                }
 
-            else if ((letter == 'p') || (letter == 'q') || (letter == 'r') || (letter == 's')) {
-                digit = 7;
-            }
-            else if ((letter == 't') || (letter == 'u') || (letter == 'v')) {
-                digit = 8;
-            }
+                else if ((letter == 'p') || (letter == 'q') || (letter == 'r') || (letter == 's')) {
+                    digit = 7;
+                }
+                else if ((letter == 't') || (letter == 'u') || (letter == 'v')) {
+                    digit = 8;
+                }
 
-            else if ((letter == 'w') || (letter == 'x') || (letter == 'y') || (letter == 'z')) {
-                digit = 9;
+                else if ((letter == 'w') || (letter == 'x') || (letter == 'y') || (letter == 'z')) {
+                    digit = 9;
+                }
+                cout << "The letter "<< letter << " is converted to the digit " << digit << endl;
+                cout << "i is equal to " << i << endl;
+                telephoneInNum.append(to_string(digit));
             }
-
-            cout << "The letter "<< letter << " is converted to the digit " << digit << endl;
-            cout << "i is equal to " << i << endl;
-            telephoneInNum.append(to_string(digit));
+            else {
+                cout << "error in letter input" << endl;
+                numOfLetters++;
+            }
+            
             i++;
         }
 
