@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -22,7 +23,7 @@ int main() {
     // Calculate the number of cartons needed, cost of producing milk,
     // and profit from producing milk
 
-    numOfCartons = static_cast<int>(litersOfMilk / milkPerCarton);
+    numOfCartons = round(litersOfMilk / milkPerCarton);
     costOfProducingMilk = litersOfMilk * costPerLiter;
     profitOfProducingMilk = numOfCartons * profitPerCarton;
 
