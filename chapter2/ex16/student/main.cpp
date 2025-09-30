@@ -1,3 +1,8 @@
+// This program takes the total amount of milk produced in the morning
+// and calculates the number of cartons needed, the cost of producing the milk,
+// and the profit for producing the milk.
+// Date: 9/30/2025
+
 #include <iostream>
 #include <cmath>
 
