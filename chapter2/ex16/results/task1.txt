@@ -3,21 +3,16 @@ Status: PASSED!
 Check: 1
 Test: Test case 1
 Reason: None
-Timestamp: 2025-09-30 21:08:48.981024
+Timestamp: 2025-09-30 21:17:20.746046
 
 Status: PASSED!
 Check: 2
 Test: Test case 2
 Reason: None
-Timestamp: 2025-09-30 21:08:48.983189
+Timestamp: 2025-09-30 21:17:20.748065
 
-Status: FAILED!
+Status: PASSED!
 Check: 3
 Test: Test case 3
-Reason: Unable to find '['950', '1364.41', '256.5']' in the program's output.
-Enter the amount of milk produced in the morning in liters: Number of cartons needed: 949
-Cost of producing milk: $1364.41
-Profit from producing milk: $256.23
-.
-Error : AssertionError - Unable to find a number close enough to 950 (+/-0.00) in the program's output.
-Timestamp: 2025-09-30 21:08:48.985127
+Reason: None
+Timestamp: 2025-09-30 21:17:20.749995
