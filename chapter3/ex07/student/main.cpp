@@ -1,3 +1,7 @@
+// This program calculates the average daily balance 
+// and interest of a credit card's unpaided balance.
+// Date: 10/1/2025
+
 #include <iostream>
 #include <iomanip>
 
@@ -15,7 +19,7 @@ int main() {
     
     cout << setprecision(2) << fixed;
 
-    // Prompt user for input
+    // Prompt user to enter values
 
     cout << "Enter net balance: ";
     cin >> netBalance;
@@ -28,10 +32,14 @@ int main() {
     cout << "Enter interest rate (as a decimal): ";
     cin >> interestRate;
 
+    // Calculate average daily balance and interest
+
     averageDailyBalance = (netBalance * d1 - payment * d2) / d1;
 
     interest = averageDailyBalance * interestRate;
     averageDailyBalance = averageDailyBalance + interest;
+
+    // Output the average daily balance and interest
 
     cout << "Average Daily Balance: " << averageDailyBalance << endl;
     cout << "Interest: " << interest << endl;
