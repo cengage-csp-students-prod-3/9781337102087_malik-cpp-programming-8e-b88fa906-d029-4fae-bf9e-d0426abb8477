@@ -1,48 +1,24 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Addition test 1
-Reason: Unable to find '['99', '+', '54', '=', '153']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the operation to be performed for the two integer
-The result is: 153
-.
-Error : AssertionError - Unable to find a number close enough to 99 (+/-0.00) in the program's output.
-Timestamp: 2025-10-01 19:02:15.317917
+Reason: None
+Timestamp: 2025-10-01 19:13:43.664981
 
-Status: FAILED!
+Status: PASSED!
 Check: 2
 Test: Subtraction test 1
-Reason: Unable to find '['-20', '-', '5', '=', '25']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the operation to be performed for the two integer
-The result is: -25
-.
-Error : AssertionError - Unable to find -20 in the program's output.
-Timestamp: 2025-10-01 19:02:15.319991
+Reason: None
+Timestamp: 2025-10-01 19:13:43.666923
 
-Status: FAILED!
+Status: PASSED!
 Check: 3
 Test: Multiplication test 1
-Reason: Unable to find '['5', '*', '30', '=', '150']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the operation to be performed for the two integer
-The result is: 150
-.
-Error : AssertionError - Unable to find a number close enough to 5 (+/-0.00) in the program's output.
-Timestamp: 2025-10-01 19:02:15.321939
+Reason: None
+Timestamp: 2025-10-01 19:13:43.668833
 
-Status: FAILED!
+Status: PASSED!
 Check: 4
 Test: Division test 1
-Reason: Unable to find '['90', '/', '5', '=', '18']' in the program's output.
-Enter the first number
-Enter the second number
-Enter the operation to be performed for the two integer
-The result is: 18
-.
-Error : AssertionError - Unable to find a number close enough to 90 (+/-0.00) in the program's output.
-Timestamp: 2025-10-01 19:02:15.323838
+Reason: None
+Timestamp: 2025-10-01 19:13:43.670693
