@@ -4,13 +4,12 @@ using namespace std;
 
 int main() {
     // Write your main here
-
-    const double INTEREST_RATE = 0.0152;
     
     double netBalance;
     int d1, d2;
     double payment;
     double interest;
+    double interestRate;
     double averageDailyBalance = 0.00;
     
 
@@ -24,11 +23,13 @@ int main() {
     cin >> d2;
     cout << "Enter payment amount: ";
     cin >> payment;
+    cout << "Enter interest rate (as a decimal): ";
+    cin >> interestRate;
 
     averageDailyBalance = (netBalance * d1 - payment * d2) / d1;
 
-    interest = averageDailyBalance * INTEREST_RATE;
-    averageDailyBalance = averageDailyBalance + interest;
+    interest = averageDailyBalance * interestRate;
+    //averageDailyBalance = averageDailyBalance + interest;
 
     cout << "Average Daily Balance: " << averageDailyBalance << endl;
     cout << "Interest: " << interest << endl;
