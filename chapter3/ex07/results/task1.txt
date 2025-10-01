@@ -3,18 +3,18 @@ Status: FAILED!
 Check: 1
 Test: Correct interest output test 1
 Reason: Unable to find '['856.83']' in the program's output.
-Enter net balance: Enter days in billing cycle (d1): Enter days payment is made before billing cycle (d2): Enter payment amount: Average Daily Balance: 88.3333
+Enter net balance: Enter days in billing cycle (d1): Enter days payment is made before billing cycle (d2): Enter payment amount: Average Daily Balance: 89.676
 Interest: 1.34267
 .
 Error : AssertionError - Unable to find a number close enough to 856.83 (+/-0.00) in the program's output.
-Timestamp: 2025-10-01 16:16:25.465113
+Timestamp: 2025-10-01 16:19:13.196739
 
 Status: FAILED!
 Check: 2
 Test: Correct interest output test 2
 Reason: Unable to find '['3080.38']' in the program's output.
-Enter net balance: Enter days in billing cycle (d1): Enter days payment is made before billing cycle (d2): Enter payment amount: Average Daily Balance: 250.437
+Enter net balance: Enter days in billing cycle (d1): Enter days payment is made before billing cycle (d2): Enter payment amount: Average Daily Balance: 254.244
 Interest: 3.80665
 .
 Error : AssertionError - Unable to find a number close enough to 3080.38 (+/-0.00) in the program's output.
-Timestamp: 2025-10-01 16:16:25.467103
+Timestamp: 2025-10-01 16:19:13.198785
