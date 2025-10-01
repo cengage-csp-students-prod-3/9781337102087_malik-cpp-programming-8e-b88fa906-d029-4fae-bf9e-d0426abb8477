@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ int main() {
     double interestRate;
     double averageDailyBalance = 0.00;
     
+    cout << setprecision(2) << fixed;
 
     // Prompt user for input
 
@@ -29,7 +31,7 @@ int main() {
     averageDailyBalance = (netBalance * d1 - payment * d2) / d1;
 
     interest = averageDailyBalance * interestRate;
-    //averageDailyBalance = averageDailyBalance + interest;
+    averageDailyBalance = averageDailyBalance + interest;
 
     cout << "Average Daily Balance: " << averageDailyBalance << endl;
     cout << "Interest: " << interest << endl;
