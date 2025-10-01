@@ -1,3 +1,5 @@
+// This program mimics a calculator. It can perform arithmetic operations on two integers.
+
 #include <iostream>
 
 using namespace std;
