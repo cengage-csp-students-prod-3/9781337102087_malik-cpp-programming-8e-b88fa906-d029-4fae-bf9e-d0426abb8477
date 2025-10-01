@@ -51,7 +51,7 @@ int main() {
 
     // Display result
 
-    cout << "The result is: " << result << endl;
+    cout << "['" << firstNum << "', '" << operation << "', '" << secondNum << "', '=', '" << result << "']" << endl;
 
     return 0;
 }
