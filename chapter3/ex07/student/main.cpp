@@ -23,6 +23,7 @@ int main() {
     cout << "Enter days payment is made before billing cycle (d2): ";
     cin >> d2;
     cout << "Enter payment amount: ";
+    cin >> payment;
 
     averageDailyBalance = (netBalance * d1 - payment * d2) / d1;
 
