@@ -9,10 +9,9 @@ int reverseDigit(int integer);
 
 int main() {
     // Write your main here
+
     int integer;
     int reversedInt;
-    int numOfDigits;
-    
 
     // Prompt user to enter the integer
 
@@ -49,9 +48,9 @@ int reverseDigit(int integer)
 
     else {  // Execute if original integer is positive
         while(integer > 0) {
-        digit = integer % 10;
-        integer = integer / 10;
-        revNumber = (revNumber * 10) + digit;
+            digit = integer % 10;
+            integer = integer / 10;
+            revNumber = (revNumber * 10) + digit;
         }// end while
     }
 
