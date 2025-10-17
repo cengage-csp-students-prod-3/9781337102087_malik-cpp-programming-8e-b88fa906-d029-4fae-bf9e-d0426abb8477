@@ -3,16 +3,16 @@ Status: PASSED!
 Check: 2
 Test: `smallestIndex` returns the proper index and value for array #1
 Reason: None
-Timestamp: 2025-10-17 22:54:05.623898
+Timestamp: 2025-10-17 22:56:46.327043
 
 Status: PASSED!
 Check: 3
 Test: `smallestIndex` returns the proper index and value for array #2
 Reason: None
-Timestamp: 2025-10-17 22:54:05.625973
+Timestamp: 2025-10-17 22:56:46.329172
 
 Status: PASSED!
 Check: 4
 Test: `smallestIndex` returns the proper index and value for array #3
 Reason: None
-Timestamp: 2025-10-17 22:54:05.627939
+Timestamp: 2025-10-17 22:56:46.331179
