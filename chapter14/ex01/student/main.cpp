@@ -42,7 +42,7 @@ int main() {
     }
 
     catch (int x) {
-        cout << "['A non positive number is entered']" << endl;
+        cout << "'A non positive number is entered'" << endl;
     }
     return 0;
 }
