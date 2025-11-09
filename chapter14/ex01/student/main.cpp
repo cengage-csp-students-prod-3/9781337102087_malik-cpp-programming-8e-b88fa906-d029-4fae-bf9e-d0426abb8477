@@ -24,14 +24,14 @@ int main() {
         cout << "Enter the length in feet" << endl;
         cin >> feetLength;
 
-        if(!(cin.good())) {
+        if(feetLength < 0 || (cin.fail())) {
             throw feetLength;
         }
 
         cout << "Enter the length in inches" << endl;
         cin >> inchLength;
 
-        if(!(cin.good())) {
+        if(inchLength < 0 || (cin.fail())) {
             throw inchLength;
         }
 
@@ -41,7 +41,7 @@ int main() {
         cout << "The length in centimeters is: " << convertedLength << endl;
     }
 
-    catch (int x) {
+    catch (double x) {
         cout << "'A non positive number is entered'" << endl;
     }
     return 0;
