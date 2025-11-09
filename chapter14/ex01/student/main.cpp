@@ -10,7 +10,8 @@ int main() {
 
     const double centimeterConversion = 2.54;
 
-    int length;
+    int feetLength;
+    int inchLength;
     double convertedLength;
 
     try 
@@ -18,19 +19,24 @@ int main() {
         // Prompt user to enter length in feet and in inches
 
         cout << "Enter the length in feet" << endl;
-        cin >> length;
+        cin >> feetLength;
+
+        cout << "Enter the length in inches" << endl;
+        cin >> inchLength;
 
         if(cin.fail()) {
-            throw length;
+            throw feetLength;
+            throw inchLength;
         }
 
-        convertedLength = length * centimeterConversion;
+        inchLength = (feetLength * 12) + inchLength;
+        convertedLength = inchLength * centimeterConversion;
 
         cout << "The length in centimeters is: " << convertedLength;
     }
 
     catch (int x) {
-        cout << "A non positive number is entered" << endl;
+        cout << "['A non positive number is entered']" << endl;
     }
     return 0;
 }
