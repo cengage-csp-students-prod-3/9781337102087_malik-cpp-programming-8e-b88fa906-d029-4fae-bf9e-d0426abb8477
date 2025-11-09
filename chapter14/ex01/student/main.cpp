@@ -2,6 +2,7 @@
 // 11/9/2025
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -10,9 +11,11 @@ int main() {
 
     const double centimeterConversion = 2.54;
 
-    int feetLength;
-    int inchLength;
+    double feetLength;
+    double inchLength;
     double convertedLength;
+
+    cout << fixed << showpoint << setprecision(2) << endl;
 
     try 
     {
@@ -21,18 +24,21 @@ int main() {
         cout << "Enter the length in feet" << endl;
         cin >> feetLength;
 
+        if(!(cin.good())) {
+            throw feetLength;
+        }
+
         cout << "Enter the length in inches" << endl;
         cin >> inchLength;
 
-        if(cin.fail()) {
-            throw feetLength;
+        if(!(cin.good())) {
             throw inchLength;
         }
 
         inchLength = (feetLength * 12) + inchLength;
         convertedLength = inchLength * centimeterConversion;
 
-        cout << "The length in centimeters is: " << convertedLength;
+        cout << "The length in centimeters is: " << convertedLength << endl;
     }
 
     catch (int x) {
