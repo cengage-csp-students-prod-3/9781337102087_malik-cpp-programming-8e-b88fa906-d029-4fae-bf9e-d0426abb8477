@@ -27,8 +27,8 @@ int main() {
         cin >> inputHr;
         cout << endl;
 
-        //if (inputHr < 0 || inputHr >= 12)
-            //throw invalidHr();
+        if (inputHr < 0 || inputHr >= 12)
+            throw invalidHr();
 
         cout << "Enter the minutes" << endl;
         cin >> inputMin;
@@ -50,17 +50,13 @@ int main() {
 
         // Adds 12 hours to input time if pm is selected
 
-        /*if (amOrPm == "pm" || amOrPm == "PM") {
+        if (amOrPm == "pm" || amOrPm == "PM") {
             outputHr = inputHr + 12;
         }
 
         else if (amOrPm == "am" || amOrPm == "AM") {
             outputHr = inputHr;
-        }*/
-        
-        //outputHr = inputHr + 12;
-
-        outputHr = inputHr;
+        }
 
         // Converts time from 12-hour notation to 24-hour notation
 
