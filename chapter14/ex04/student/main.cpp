@@ -43,6 +43,14 @@ int main() {
             //outputHr = inputHr;
         //}
 
+        if (inputSec < 12) {
+            outputHr = inputHr + 12;
+        }
+
+        else if (inputSec > 12) {
+            outputHr = inputHr;
+        }
+
         militaryTime = to_string(outputHr) + ":" + to_string(inputMin) + ":" + to_string(inputSec);
 
         cout << "The time in 24-hour notation is " << militaryTime << endl;
