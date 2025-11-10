@@ -1,9 +1,18 @@
 
-Status: PASSED!
+Status: FAILED!
 Check: 1
 Test: 0:56:11 test
-Reason: None
-Timestamp: 2025-11-10 18:17:09.192308
+Reason: Unable to find '['0:56:11']' in the program's output.
+Enter the hours
+
+Enter the minutes
+
+Enter the seconds
+
+The time in 24-hour notation is 24:56:11
+.
+Error : AssertionError - Unable to find 0:56:11 in the program's output.
+Timestamp: 2025-11-10 22:31:01.829536
 
 Status: FAILED!
 Check: 2
@@ -15,7 +24,7 @@ Enter the minutes
 
 Enter the seconds
 
-The time in 24-hour notation is 0:22:13
+The time in 24-hour notation is 1:22:13
 .
 Error : AssertionError - Unable to find 13:22:13 in the program's output.
-Timestamp: 2025-11-10 18:17:09.194387
+Timestamp: 2025-11-10 22:31:01.831527
