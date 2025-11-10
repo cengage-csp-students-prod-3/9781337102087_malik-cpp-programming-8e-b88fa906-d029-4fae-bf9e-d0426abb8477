@@ -13,6 +13,7 @@ int main() {
     int inputMin;
     int inputSec;
     int outputHr;
+    string amOrPm;
     string militaryTime;
 
     //try {
@@ -30,13 +31,18 @@ int main() {
         cin >> inputSec;
         cout << endl;
 
-        if (inputHr < 12) {
+        cout << "Enter AM or PM" << endl;
+        cin >> amOrPm;
+        cout << endl;
+
+        if (amOrPm == "pm" || amOrPm == "PM") {
             outputHr = inputHr + 12;
         }
 
-        else
+        else if (amOrPm == "am" || amOrPm == "AM") {
             outputHr = inputHr;
-
+        }
+        
         militaryTime = to_string(outputHr) + ":" + to_string(inputMin) + ":" + to_string(inputSec);
 
         cout << "The time in 24-hour notation is " << militaryTime << endl;
