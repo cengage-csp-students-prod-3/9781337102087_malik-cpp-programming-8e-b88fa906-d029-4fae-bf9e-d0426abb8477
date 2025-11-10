@@ -24,6 +24,8 @@ int main() {
         cout << "Enter the length in feet" << endl;
         cin >> feetLength;
 
+        // Check if the input is positive and a number
+
         if(feetLength < 0 || (cin.fail())) {
             throw feetLength;
         }
@@ -35,14 +37,18 @@ int main() {
             throw inchLength;
         }
 
+        // Convert length from inch to centimeter
+
         inchLength = (feetLength * 12) + inchLength;
         convertedLength = inchLength * centimeterConversion;
+
+        // Display the output
 
         cout << "The length in centimeters is: " << convertedLength << endl;
     }
 
     catch (double x) {
-        cout << "'A non positive number is entered'" << endl;
+        cout << "'A non positive number is entered'" << endl; 
     }
     return 0;
 }
