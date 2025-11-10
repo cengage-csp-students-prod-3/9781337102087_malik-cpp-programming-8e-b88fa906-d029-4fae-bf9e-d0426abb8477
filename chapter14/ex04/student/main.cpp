@@ -31,23 +31,15 @@ int main() {
         cin >> inputSec;
         cout << endl;
 
-        //cout << "Enter AM or PM" << endl;
-        //cin >> amOrPm;
-        //cout << endl;
+        cout << "Enter AM or PM" << endl;
+        cin >> amOrPm;
+        cout << endl;
 
-        //if (amOrPm == "pm" || amOrPm == "PM") {
-            //outputHr = inputHr + 12;
-        //}
-
-        //else if (amOrPm == "am" || amOrPm == "AM") {
-            //outputHr = inputHr;
-        //}
-
-        if (inputSec < 12) {
+        if (amOrPm == "pm" || amOrPm == "PM") {
             outputHr = inputHr + 12;
         }
 
-        else if (inputSec > 12) {
+        else if (amOrPm == "am" || amOrPm == "AM") {
             outputHr = inputHr;
         }
 
