@@ -9,13 +9,15 @@ Enter the minutes
 
 Enter the seconds
 
+Enter AM or PM
+
 The time in 24-hour notation is 12:56:11
 .
 Error : AssertionError - Unable to find 0:56:11 in the program's output.
-Timestamp: 2025-11-10 17:22:42.047015
+Timestamp: 2025-11-10 18:11:39.139552
 
 Status: PASSED!
 Check: 2
 Test: 13:22:13 test
 Reason: None
-Timestamp: 2025-11-10 17:22:42.049025
+Timestamp: 2025-11-10 18:11:39.141553
