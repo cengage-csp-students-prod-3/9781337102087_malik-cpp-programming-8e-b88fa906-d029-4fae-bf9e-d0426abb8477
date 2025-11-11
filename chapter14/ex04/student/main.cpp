@@ -27,7 +27,7 @@ int main() {
         cin >> inputHr;
         cout << endl;
 
-        if (inputHr < 0 || inputHr >= 12)
+        if (inputHr < 0 || inputHr > 12)
             throw invalidHr();
 
         cout << "Enter the minutes" << endl;
@@ -48,10 +48,14 @@ int main() {
         cin >> amOrPm;
         cout << endl;
 
+        //if(inputHr == 12) {
+            //inputHr = 00;
+        //}
+
         // Adds 12 hours to input time if pm is selected
 
         if (amOrPm == "pm" || amOrPm == "PM") {
-            outputHr = inputHr + 12;
+            outputHr = inputHr + 10;
         }
 
         else if (amOrPm == "am" || amOrPm == "AM") {
