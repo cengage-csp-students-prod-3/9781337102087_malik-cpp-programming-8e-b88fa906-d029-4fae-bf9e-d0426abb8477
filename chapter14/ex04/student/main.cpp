@@ -48,14 +48,14 @@ int main() {
         cin >> amOrPm;
         cout << endl;
 
-        //if(inputHr == 12) {
-            //inputHr = 00;
-        //}
+        if(inputHr == 12) {
+            inputHr = 00;
+        }
 
         // Adds 12 hours to input time if pm is selected
 
         if (amOrPm == "pm" || amOrPm == "PM") {
-            outputHr = inputHr + 10;
+            outputHr = inputHr + 12;
         }
 
         else if (amOrPm == "am" || amOrPm == "AM") {
