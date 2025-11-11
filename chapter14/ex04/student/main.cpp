@@ -3,6 +3,7 @@
 // 11/10/2025
 
 #include <iostream>
+#include <string>
 #include "invalidHr.h"
 #include "invalidMin.h"
 #include "invalidSec.h"
@@ -21,7 +22,8 @@ int main() {
 
     try
     {
-        // Prompt user to enter time in 12-hour notation
+        // Prompt user to enter time in 12-hour notation and check if input 
+        // is within correct range
 
         cout << "Enter the hours" << endl;
         cin >> inputHr;
@@ -62,16 +64,16 @@ int main() {
             outputHr = inputHr;
         }
 
-        // Converts time from 12-hour notation to 24-hour notation
+        // Convert time from 12-hour notation to 24-hour notation
 
         militaryTime = to_string(outputHr) + ":" + to_string(inputMin) + ":" + to_string(inputSec);
 
-        // Displays the converted time
+        // Display the converted time
     
         cout << "The time in 24-hour notation is " << militaryTime << endl;
     }
 
-    // Catch any incorrect input
+    // Catch incorrect input that isn't within the correct range
 
     catch (invalidHr object)
     {
