@@ -33,6 +33,8 @@ int main() {
     if (yearlyIncome <= 25000)
         hasLowIncome = true;
 
+    // Call the function to calculate billing amount
+
     billingAmount = calculateBillingAmount(hourlyRate, totalConsultingTime, hasLowIncome);
 
     // Output the billing amount
@@ -42,13 +44,15 @@ int main() {
     return 0;
 }
 
-// This function calculates the billing amount 
+// This function calculates the billing amount based on the person's income and the amount of consulting time.
 
 double calculateBillingAmount(double hourlyRate, double time, bool lowIncome)
 {
     double billingAmount;
     double testVariable;
     time = static_cast<double>(time);
+
+    // This if statement executes if yearly income is less than 25,000
 
     if (lowIncome == true) {
 
@@ -60,6 +64,8 @@ double calculateBillingAmount(double hourlyRate, double time, bool lowIncome)
             billingAmount = (hourlyRate * 0.4) * ((time - 30) / 60);
         }
     }
+
+    // This else statement executes if yearly income is more than 25,000
 
     else if (lowIncome == false) {
         if (time <= 20) {
