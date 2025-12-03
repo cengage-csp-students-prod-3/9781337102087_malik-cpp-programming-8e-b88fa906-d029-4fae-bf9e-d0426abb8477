@@ -1,0 +1,28 @@
+
+Status: FAILED!
+Check: 1
+Test: Successful Output
+Reason: Unable to find '['8.40']' in the program's output.
+Enter your yearly income: 
+
+Enter your hourly rate: 
+
+Enter your total consulting time: 
+
+.
+Error : AssertionError - Unable to find a number close enough to 8.40 (+/-0.00) in the program's output.
+Timestamp: 2025-12-03 00:17:46.010361
+
+Status: FAILED!
+Check: 2
+Test: Successful Output II
+Reason: Unable to find '['4.00']' in the program's output.
+Enter your yearly income: 
+
+Enter your hourly rate: 
+
+Enter your total consulting time: 
+
+.
+Error : AssertionError - Unable to find a number close enough to 4.00 (+/-0.00) in the program's output.
+Timestamp: 2025-12-03 00:17:46.078750
