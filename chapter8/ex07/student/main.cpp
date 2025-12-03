@@ -21,8 +21,6 @@ int main() {
     double percentOfTotalVotes[NUM_OF_CANDIDATES];
     int totalVotes = 0;
 
-    //cout << fixed << showpoint;
-
     // Prompt user to enter the input the last name of the five candidates 
     // and the number of votes received by each candidate.
 
@@ -42,7 +40,7 @@ int main() {
         //cout << "Number in double is "<< static_cast<double>(totalVotes);
         percentOfTotalVotes[i] = votesReceived[i] / static_cast<double>(totalVotes);
         percentOfTotalVotes[i] = percentOfTotalVotes[i] * 100;
-        //cout << "percentage of total votes is " << percentOfTotalVotes[i] << endl;
+        cout << "percentage of total votes is " << percentOfTotalVotes[i] << endl;
     }
 
     /*for(int x = 0; x < 5; x++) {
@@ -73,8 +71,10 @@ void outputWinnerOfElection(string candidate[], int votes[], double percentOfVot
 {
     string winner;
     int largest_element_index = 0;
+
+    cout << fixed << showpoint;
+    cout << setprecision(2);
     
-    cout << setprecision(4);
 
     // Find the largest element in the votes array
 
