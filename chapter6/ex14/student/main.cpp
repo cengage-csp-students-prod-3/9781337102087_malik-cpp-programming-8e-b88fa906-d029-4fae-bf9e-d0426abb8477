@@ -45,6 +45,7 @@ double calculateBillingAmount(double hourlyRate, double time, bool lowIncome)
 {
     double billingAmount;
     double testVariable;
+    time = static_cast<double>(time);
 
     if (lowIncome == true) {
 
@@ -63,9 +64,7 @@ double calculateBillingAmount(double hourlyRate, double time, bool lowIncome)
         }
 
         else {
-            
             billingAmount = (hourlyRate * 0.7) * ((time - 20) / 60);
-            cout << "This part of code executed" << testVariable << endl;
         }
     }
 
