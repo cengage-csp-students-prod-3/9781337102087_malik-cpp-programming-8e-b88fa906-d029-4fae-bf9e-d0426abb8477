@@ -1,5 +1,4 @@
-// This program calculates the billing amount from the user's yearly income, 
-// the hourly rate, and the total consulting time.
+// This program calculates the billing amount from the user's yearly income, the hourly rate, and the total consulting time.
 // Date: 12/2/2025
 
 #include <iostream>
@@ -27,7 +26,7 @@ int main() {
     cin >> hourlyRate;
     cout << endl;
 
-    cout << "Enter your total consulting time: " << endl;
+    cout << "Enter your total consulting time in minutes: " << endl;
     cin >> totalConsultingTime;
     cout << endl;
 
@@ -36,10 +35,14 @@ int main() {
 
     billingAmount = calculateBillingAmount(hourlyRate, totalConsultingTime, hasLowIncome);
 
+    // Output the billing amount
+
     cout << "The billing amount is " << billingAmount << endl;
 
     return 0;
 }
+
+// This function calculates the billing amount 
 
 double calculateBillingAmount(double hourlyRate, double time, bool lowIncome)
 {
