@@ -1,0 +1,17 @@
+
+Status: FAILED!
+Check: 3
+Test: Successful Output
+Reason: Unable to find '['Richmond', '5000', '2.18', 'Johns', '60000 26.20', 'Hopkins 25000 10.92', 'Smith 80000 34.93', 'McCoy 59000 25.76', 'The Winner of the Election is Smith']' in the program's output.
+Enter the last name of the candidate.
+Enter the number of votes received by the candidate.
+Enter the last name of the candidate.
+Enter the number of votes received by the candidate.
+                     Candidate                Votes Received              & of Total Votes
+                      Richmond                          5000                          0.08
+                         Johns                         60000                          0.92
+                  Total Votes:                         65000
+The Winner of the Election is Johns
+.
+Error : AssertionError - Unable to find 2.18 in the program's output.
+Timestamp: 2025-12-03 20:12:19.375557
