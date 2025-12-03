@@ -8,7 +8,7 @@
 
 using namespace std;
 
-const int NUM_OF_CANDIDATES = 2;
+const int NUM_OF_CANDIDATES = 5;
 
 int calculateSumOfVotes(int votesReceived[]);
 void outputWinnerOfElection(string candidate[], int votes[], double percentOfVotes[], int totalVotes);
