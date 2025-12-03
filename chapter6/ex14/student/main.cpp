@@ -6,16 +6,16 @@
 
 using namespace std;
 
-double calculateBillingAmount(double hourlyRate, int time, bool lowIncome);
+double calculateBillingAmount(double hourlyRate, double time, bool lowIncome);
 
 int main() {
     // Write your main here
 
     double yearlyIncome;
     double hourlyRate;
-    int totalConsultingTime;
+    double totalConsultingTime;
     bool hasLowIncome = false;
-    double billingAmount;
+    double billingAmount = 0.00;
 
     // Prompt user to enter yearly income, the hourly rate, the total consulting time.
 
@@ -41,15 +41,33 @@ int main() {
     return 0;
 }
 
-double calculateBillingAmount(double hourlyRate, int time, bool lowIncome)
+double calculateBillingAmount(double hourlyRate, double time, bool lowIncome)
 {
     double billingAmount;
+    double testVariable;
 
-    if ((lowIncome == true) && (time <= 30)) {
+    if (lowIncome == true) {
 
+        if (time <= 30) {
+            billingAmount = 0;
+        }
+
+        else {
+            billingAmount = (hourlyRate * 0.4) * ((time - 30) / 60);
+        }
     }
 
-    else {
-        billingAmount = (hourlyRate * 0.4) * ((time - 30) / 60);
+    else if (lowIncome == false) {
+        if (time <= 20) {
+            billingAmount = 0;
+        }
+
+        else {
+            
+            billingAmount = (hourlyRate * 0.7) * ((time - 20) / 60);
+            cout << "This part of code executed" << testVariable << endl;
+        }
     }
+
+    return billingAmount;
 }
