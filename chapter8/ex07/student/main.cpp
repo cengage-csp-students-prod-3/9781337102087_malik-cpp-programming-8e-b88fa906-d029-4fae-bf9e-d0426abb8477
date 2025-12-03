@@ -39,10 +39,10 @@ int main() {
     // Calculate the percentage of the total votes received by the candidate
 
     for (int i = 0; i < NUM_OF_CANDIDATES; i++) {
-        cout << "Number in double is "<< static_cast<double>(totalVotes);
+        //cout << "Number in double is "<< static_cast<double>(totalVotes);
         percentOfTotalVotes[i] = votesReceived[i] / static_cast<double>(totalVotes);
         percentOfTotalVotes[i] = percentOfTotalVotes[i] * 100;
-        cout << "percentage of total votes is " << percentOfTotalVotes[i] << endl;
+        //cout << "percentage of total votes is " << percentOfTotalVotes[i] << endl;
     }
 
     /*for(int x = 0; x < 5; x++) {
