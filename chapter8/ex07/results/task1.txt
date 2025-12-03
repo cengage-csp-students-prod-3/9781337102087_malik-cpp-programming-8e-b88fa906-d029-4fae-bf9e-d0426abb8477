@@ -7,11 +7,20 @@ Enter the last name of the candidate.
 Enter the number of votes received by the candidate.
 Enter the last name of the candidate.
 Enter the number of votes received by the candidate.
+Enter the last name of the candidate.
+Enter the number of votes received by the candidate.
+Enter the last name of the candidate.
+Enter the number of votes received by the candidate.
+Enter the last name of the candidate.
+Enter the number of votes received by the candidate.
                      Candidate                Votes Received              & of Total Votes
-                      Richmond                          5000                          0.08
-                         Johns                         60000                          0.92
-                  Total Votes:                         65000
-The Winner of the Election is Johns
+                      Richmond                          5000                          0.02
+                         Johns                         60000                          0.26
+                       Hopkins                         25000                          0.11
+                         Smith                         80000                          0.35
+                         McCoy                         59000                          0.26
+                  Total Votes:                        229000
+The Winner of the Election is Smith
 .
 Error : AssertionError - Unable to find 2.18 in the program's output.
-Timestamp: 2025-12-03 20:12:19.375557
+Timestamp: 2025-12-03 20:14:46.663630
