@@ -10,6 +10,8 @@ using namespace std;
 
 const int NUM_OF_CANDIDATES = 5;
 
+// Function Prototypes
+
 int calculateSumOfVotes(int votesReceived[]);
 void outputWinnerOfElection(string candidate[], int votes[], double percentOfVotes[], int totalVotes);
 
@@ -21,8 +23,7 @@ int main() {
     double percentOfTotalVotes[NUM_OF_CANDIDATES];
     int totalVotes = 0;
 
-    // Prompt user to enter the input the last name of the five candidates 
-    // and the number of votes received by each candidate.
+    // Prompt user to enter the input the last name of the five candidates and the number of votes received by each candidate.
 
     for (int i = 0; i < NUM_OF_CANDIDATES; i++) {
         cout << "Enter the last name of the candidate." << endl;
@@ -37,22 +38,17 @@ int main() {
     // Calculate the percentage of the total votes received by the candidate
 
     for (int i = 0; i < NUM_OF_CANDIDATES; i++) {
-        //cout << "Number in double is "<< static_cast<double>(totalVotes);
         percentOfTotalVotes[i] = votesReceived[i] / static_cast<double>(totalVotes);
         percentOfTotalVotes[i] = percentOfTotalVotes[i] * 100;
         cout << "percentage of total votes is " << percentOfTotalVotes[i] << endl;
     }
 
-    /*for(int x = 0; x < 5; x++) {
-        cout << "Elements in votesReceived array is " << votesReceived[x] << endl;
-    }
-
-    cout << "The sum of votes is " << totalVotes << endl;*/
-
     outputWinnerOfElection(candidateLastName, votesReceived, percentOfTotalVotes, totalVotes);
 
     return 0;
 }
+
+// This function determines the sum of votes.
 
 int calculateSumOfVotes(int votesReceived[])
 {
@@ -60,12 +56,12 @@ int calculateSumOfVotes(int votesReceived[])
 
     for(int i = 0; i < NUM_OF_CANDIDATES; i++) {
         sumOfVotes = sumOfVotes + votesReceived[i];
-        //cout << "Elements in votesReceived array is " << votesReceived[i] << endl;
-        //cout << "The sum of votes is " << sumOfVotes << endl;
     }
 
     return sumOfVotes;
 }
+
+// This function outputs the winner of the election.
 
 void outputWinnerOfElection(string candidate[], int votes[], double percentOfVotes[], int totalVotes)
 {
@@ -75,7 +71,6 @@ void outputWinnerOfElection(string candidate[], int votes[], double percentOfVot
     cout << fixed << showpoint;
     cout << setprecision(2);
     
-
     // Find the largest element in the votes array
 
     int largest_element = votes[0];
@@ -86,8 +81,9 @@ void outputWinnerOfElection(string candidate[], int votes[], double percentOfVot
             largest_element_index = i;
         }
     }
-
     winner = candidate[largest_element_index];
+
+    // Print out the candidate's last name, the number of votes received, and the percentage of total votes
 
     cout << std::setw(30) << "Candidate" << std::setw(30) << "Votes Received" << std::setw(30) << "& of Total Votes" << endl;
 
